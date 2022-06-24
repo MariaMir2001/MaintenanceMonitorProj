@@ -18,4 +18,9 @@ public class MaintenanceMonitorProjController {
         return a.resetMessage();
     }
 
+    @RequestMapping("/deliver")
+    public String deliverMessage() {
+        return a.deliverMessage();
+    }
+
 }
