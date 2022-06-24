@@ -35,4 +35,12 @@ public class MaintenanceMonitorProjTest {
 
     }
 
+    @Test
+    void resetTest1(){
+        String expectedResult=null;
+        String result=tester.resetMessage();
+        assertEquals(expectedResult,result);
+
+    }
+
 }

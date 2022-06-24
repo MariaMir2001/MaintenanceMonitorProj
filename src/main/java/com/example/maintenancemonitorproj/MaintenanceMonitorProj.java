@@ -7,4 +7,11 @@ public class MaintenanceMonitorProj {
     public String setMessage( String input) {
         return this.input = input;
     }
+
+    public String resetMessage() {
+        input = null;
+        return input;
+    }
+
+
 }

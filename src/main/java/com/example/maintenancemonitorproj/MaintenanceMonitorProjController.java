@@ -12,4 +12,10 @@ public class MaintenanceMonitorProjController {
     public String setMessage(@RequestParam String input) {
         return a.setMessage(input);
     }
+
+    @RequestMapping("/reset")
+    public String resetMessage() {
+        return a.resetMessage();
+    }
+
 }
