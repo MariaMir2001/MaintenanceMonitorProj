@@ -13,5 +13,9 @@ public class MaintenanceMonitorProj {
         return input;
     }
 
+    public String deliverMessage() {
+        return input;
+    }
+
 
 }
