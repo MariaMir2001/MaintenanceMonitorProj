@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="utf-8" http-equiv="Refresh" content="5">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Maintenance Monitor</title>
+
+	<style type="text/css">
+		* {
+			font-size: 50px;
+		}
+	</style>
+</head>
+<body style="text-align: center">
+	<div>
+		<h1>Maintenance Monitor</h1>
+
+	</div>
+	<div>
+		 <span id="result" ></span>
+	</div>
+
+	<script type="text/javascript">
+
+			fetch("http://localhost:8080/deliver")
+			.then(response => response.text())
+			.then(data => {
+				let resultSpan = document.getElementById("result");
+
+				resultSpan.innerHTML = data;
+			})
+
+		
+	</script>
+
+</body>
+</html>
